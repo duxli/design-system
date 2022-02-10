@@ -5,11 +5,9 @@
 
 ## Properties
 
-| Property | Attribute | Description     | Type     | Default     |
-| -------- | --------- | --------------- | -------- | ----------- |
-| `first`  | `first`   | The first name  | `string` | `undefined` |
-| `last`   | `last`    | The last name   | `string` | `undefined` |
-| `middle` | `middle`  | The middle name | `string` | `undefined` |
+| Property  | Attribute | Description             | Type                                            | Default     |
+| --------- | --------- | ----------------------- | ----------------------------------------------- | ----------- |
+| `variant` | `variant` | Variant for the button. | `"filled" \| "icon" \| "minimal" \| "outlined"` | `undefined` |
 
 
 ----------------------------------------------

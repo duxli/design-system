@@ -5,20 +5,14 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { DuxliButtonVariant } from "./components/duxli-button/duxli-button";
 export namespace Components {
     interface DuxliButton {
         /**
-          * The first name
+          * Variant for the button.
+          * @default 'outlined'
          */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "variant": DuxliButtonVariant;
     }
 }
 declare global {
@@ -35,17 +29,10 @@ declare global {
 declare namespace LocalJSX {
     interface DuxliButton {
         /**
-          * The first name
+          * Variant for the button.
+          * @default 'outlined'
          */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "variant"?: DuxliButtonVariant;
     }
     interface IntrinsicElements {
         "duxli-button": DuxliButton;

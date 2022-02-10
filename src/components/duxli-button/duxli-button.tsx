@@ -1,32 +1,24 @@
 import { Component, Prop, h } from '@stencil/core';
-import { format } from '../../utils/utils';
+
+export type DuxliButtonVariant = 'outlined' | 'filled' | 'minimal' | 'icon';
 
 @Component({
   tag: 'duxli-button',
-  styleUrl: 'duxli-button.css',
+  styleUrl: 'duxli-button.scss',
   shadow: true,
 })
-export class DuxliButton {
+export class DuxliButton extends HTMLButtonElement {
   /**
-   * The first name
+   * Variant for the button.
+   * @default 'outlined'
    */
-  @Prop() first: string;
-
-  /**
-   * The middle name
-   */
-  @Prop() middle: string;
-
-  /**
-   * The last name
-   */
-  @Prop() last: string;
-
-  private getText(): string {
-    return format(this.first, this.middle, this.last);
-  }
+  @Prop() variant: DuxliButtonVariant;
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return (
+      <button>
+        <slot />
+      </button>
+    );
   }
 }
