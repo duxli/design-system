@@ -8,6 +8,7 @@
       "dom",
       "es2017"
     ],
+    "typeRoots": ["/.globals", "./node_modules/@types"],
     "moduleResolution": "node",
     "module": "esnext",
     "target": "es2017",
@@ -18,7 +19,7 @@
   },
   "include": [
     "src"
-  ],
+, "global-types/globals.d.ts"  ],
   "exclude": [
     "node_modules",
     "**/*.stories.*"
