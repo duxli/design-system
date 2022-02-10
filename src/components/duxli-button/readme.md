@@ -1,6 +1,4 @@
-# my-component
-
-
+# duxli-button
 
 <!-- Auto Generated Below -->
 

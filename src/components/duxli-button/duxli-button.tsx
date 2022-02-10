@@ -6,7 +6,7 @@ import { format } from '../../utils/utils';
   styleUrl: 'duxli-button.css',
   shadow: true,
 })
-export class MyComponent {
+export class DuxliButton {
   /**
    * The first name
    */
