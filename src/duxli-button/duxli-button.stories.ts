@@ -4,4 +4,4 @@ export default {
   Title: 'Button',
 };
 
-export const Basic = () => `<duxli-button>MacButton</duxli-button>`;
+export const Basic = () => `<duxli-button>Example</duxli-button>`;
